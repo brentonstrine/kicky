@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Kicky Gallery</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="normalize.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap" rel="stylesheet">
+  <style>
+  .landingRoot {
+    height: 100%;
+    min-height: 100%;
+    border: solid 2px blue;
+    min-height: 100vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: rgb(238, 238, 238);
+    background: linear-gradient(
+      294deg,
+      rgba(230, 230, 230, 1) 0%,
+      rgba(255, 255, 255, 1) 90%
+    );
+  }
+
+  canvas {
+    display: block;
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+  }
+
+  .title {
+    font-family: "Josefin Sans", sans-serif;
+    font-size: 20vh;
+    color: #fff;
+    text-shadow: 0 1px 0 #000;
+    position: absolute;
+
+  }
+  /*
+  .ku {
+    color: #0e39a6;
+  }
+  .i {
+    color: #59ffbf;
+  }
+  .c {
+    color: #f14638;
+  }
+  .kl {
+    color: #f2d938;
+  }
+  .y {
+    color: #ff309f;
+  }
+  */
+
+.noselect {
+  -webkit-touch-callout: none; /* iOS Safari */
+    -webkit-user-select: none; /* Safari */
+     -khtml-user-select: none; /* Konqueror HTML */
+       -moz-user-select: none; /* Old versions of Firefox */
+        -ms-user-select: none; /* Internet Explorer/Edge */
+            user-select: none; /* Non-prefixed version, currently
+                                  supported by Chrome, Edge, Opera and Firefox */
+}
+  </style>
+</head>
+
+<body class="landingRoot">
+  <canvas id="c"></canvas>
+  <h1 class="title noselect"><span class="ku">K</span><span class="i">i</span><span class="c">c</span><span class="kl">k</span><span class="y">y</span></h1>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/1.0.0/anime.min.js"></script>
+  <script src="punch.js"></script>
+</body>
+
+</html>
