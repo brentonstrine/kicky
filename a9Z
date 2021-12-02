@@ -7,18 +7,35 @@
   <style>
   body {
     font-family: "Josefin Sans", sans-serif;
-    }
+  }
+  .card {
+    border: solid 1px black;
+    box-shadow: #000000cc 4px 3px 20px 0px;
+    margin: 40px 0;
+    padding: 20px 40px;
+    width: 346px;
+    text-align: left;
+    font-weight: normal;
+  }
+  .card img {
+      float: right;
+    border: solid 1px blue;
+    width: 70px;
+    height: 70px;
+    margin-top: 22px;
+  }
 </head>
 <body>
-<h1>You have successfully reached the page for this art piece!</h1>
-<center><!-- sorry! -->
-  <div style="border: solid 1px black; box-shadow: #000000cc 4px 3px 20px 0px; margin: 40px 0; padding: 20px 160px 20px 40px;">
-    <img src="/img/qr/a9Z.png" style="float:right;">
-    <h3>Vincent van Gogh</h3>
-    <div>1989</div>
-    <br>
-    <div>Oil on canvas</div>
-    <div>Shortlink: kicky.art/a9Z</div>
-  </div>
-</center>
-</body></html>
+  <h1>You have successfully reached the page for this art piece!</h1>
+  <center><!-- sorry! -->
+    <div class="card">
+      <img src="/a9Z.png" style="float:right;">
+      <h3>Vincent van Gogh</h3>
+      <div>1989</div>
+      <br>
+      <div>Oil on canvas</div>
+      <div>Shortlink: kicky.art/a9Z</div>
+    </div>
+  </center>
+</body>
+</html>
